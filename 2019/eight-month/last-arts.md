@@ -45,9 +45,9 @@ blog地址: https://juejin.im/post/5d6a3028e51d4561de20b626
 <div>
 	<label>机型</label>
     <select v-model="bianma"  v-on:change="checkjixing">
-    		<option   v-for ="item in jixing" :value='item.bianma' v-model="item.bianma" >
+    	<option   v-for ="item in jixing" :value='item.bianma' v-model="item.bianma" >
 				{{item.bianma}}
-			</option>
+		</option>
 	</select>
 </div>
 ```
@@ -86,7 +86,7 @@ checkjixing:function(data){
     ]
 }
 ```
-那么上面我们通过vue循环的option标签，html就会变成下面注意  
+那么上面我们通过vue循环的option标签，html就会变成下面这样  
 ```html
 <div>
 	<label>机型</label>
@@ -94,14 +94,13 @@ checkjixing:function(data){
     		<option   value="\u5c0f\u591a\u80541\u62d64" v-model="bianma">
 				\u5c0f\u591a\u80541\u62d64
 			</option>
-
             <option  value="\u5c0f\u591a\u80541\u62d64" v-model="bianma" >
 				BM001
 			</option>
 	</select>
 </div>
 ```
-这select和option输入绑定了一样的data，导致了我一直获取不到select的值。。是我一开始没看到，修改下select绑定的模型就好了,搞了我好久。。
+这select和option输入绑定了一样的data，导致了我一直获取不到select的值。。是我一开始没看到，修改下select绑定的模型就好了,搞了我好久
 
 ```html
 <div>
