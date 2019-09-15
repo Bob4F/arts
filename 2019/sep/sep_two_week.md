@@ -81,9 +81,11 @@ func addTwoNumbers(l1 *ListNode, l2 *ListNode) *ListNode {
 	return result.Next;
 }
 ```
-相比之前打败了百分之九十，还不错
+速度相比之前打败了百分之九十，还不错
 ![](https://user-gold-cdn.xitu.io/2019/9/10/16d1a9172b1bdd20?w=940&h=468&f=png&s=49406)
 ## Review
+看了英文版的深入理解计算机第一篇，是对计算机系统做了一个概要介绍，
+
 
 ## Tip: JVM GC / 垃圾回收 - 引用计数算法
 我们了解下在 JVM 中如何定义垃圾的
@@ -127,4 +129,7 @@ public static void main(String[] args){
 }
 ```
 最后进行了销毁操作，算是告诉 JVM 这是一个可回收的垃圾了，问题是我们在l1.next,l2.next又引用了他们，按上面的算法，此时他们 RC = 2，销毁后，RC 也等于1！JVM不会去销毁这个对象，那么这个对象就无法销毁了，导致了内存的溢出
-## Share
+
+## Share:计算机系统漫游
+这是我在看了深入理解计算机第一篇后做的总结，虽然第一篇只是一片总纲，但涉及的知识点并不少，对技术没有门槛  
+链接地址:https://juejin.im/post/5d7d0b88f265da03bb4ad871
