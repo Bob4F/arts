@@ -84,7 +84,7 @@ func addTwoNumbers(l1 *ListNode, l2 *ListNode) *ListNode {
 速度相比之前打败了百分之九十，还不错
 ![](https://user-gold-cdn.xitu.io/2019/9/10/16d1a9172b1bdd20?w=940&h=468&f=png&s=49406)
 ## Review
-看了英文版的深入理解计算机第一篇，是对计算机系统做了一个概要介绍，
+看了英文版的深入理解计算机第一篇，是对计算机系统做了一个概要介绍，通过 C 程序的例子，从编码到编译，到底层系统执行，适合任何阶段
 
 
 ## Tip: JVM GC / 垃圾回收 - 引用计数算法
