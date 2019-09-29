@@ -25,7 +25,7 @@ func main() {
 	fmt.Println(lengthOfLongSubstring("a"))		   // a 1
 	fmt.Println(lengthOfLongSubstring("aab")) // aab 2
 	fmt.Println(lengthOfLongSubstring("abcabcbb")) // abc 3
-	fmt.Println(lengthOfLongSubstring("pwwkew")) // abc 3
+	fmt.Println(lengthOfLongSubstring("pwwkew")) // wke 3
 }
 
 // 返回 最长无重复子串 长度
